@@ -3,13 +3,10 @@
 @php
     $isDark = $variant === 'dark';
 
-    $classes = implode(
-        ' ',
-        array_filter([
-            'p-6 rounded-xl overflow-hidden transition hover:shadow-xl',
-            $variant === 'dark' ? 'bg-primary text-white' : 'bg-white text-secondary border border-gray-200',
-        ]),
-    );
+    $classes = implode(' ', array_filter([
+        'p-6 rounded-xl overflow-hidden transition hover:shadow-xl',
+        $isDark ? 'bg-secondary text-white' : 'bg-black text-secondary border border-gray-200',
+    ]));
 @endphp
 
 <article {{ $attributes->merge(['class' => $classes]) }}>

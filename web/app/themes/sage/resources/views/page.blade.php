@@ -15,7 +15,8 @@
 
         <x-card title="Nowość: Detektyw w akcji"
             excerpt="Rozwiąż zagadkę zaginionego listu i odkryj prawdę, zanim będzie za późno."
-            image="https://source.unsplash.com/random/400x300" link="/case-file/123" variant="dark" />
+            image="https://placehold.co/600x400" link="/case-file/123" variant="light" id="highlighted-card"
+            data-track="featured" class="border-4 border-yellow-500" />
 
 
         @includeFirst(['partials.content-page', 'partials.content'])

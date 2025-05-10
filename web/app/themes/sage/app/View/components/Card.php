@@ -4,6 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 use Illuminate\View\View;
+use Illuminate\Support\Str;
 
 class Card extends Component
 {
@@ -15,16 +16,21 @@ class Card extends Component
 
     public function __construct(
         string $title,
-        string $excerpt = null,
-        string $image = null,
-        string $link = null,
-        string $variant = 'light'
+        ?string $excerpt = null,
+        ?string $image = null,
+        ?string $link = null,
+        string $variant = 'light',
     ) {
         $this->title = $title;
-        $this->excerpt = $excerpt;
+        $this->excerpt = $this->prepareExcerpt($excerpt);
         $this->image = $image;
         $this->link = $link;
         $this->variant = $variant;
+    }
+
+    protected function prepareExcerpt(?string $excerpt): ?string
+    {
+        return $excerpt ? Str::limit($excerpt, 120) : null;
     }
 
     public function render(): View
