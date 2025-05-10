@@ -15,6 +15,8 @@ class AppServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
+        // W tej linijce mogę zarejestrować komponenty, które będą dostępne w widokach i nadac im aliasy
         Blade::component('card', Card::class);
+        Blade::component('blog-section', \App\View\Components\BlogSection::class);
     }
 }
