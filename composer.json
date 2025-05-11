@@ -44,8 +44,7 @@
     "roots/wordpress": "6.8",
     "roots/wp-config": "1.0.0",
     "wpackagist-theme/twentytwentyfive": "^1.0",
-    "wpengine/advanced-custom-fields-pro": "*",
-    "log1x/acf-composer": "^3.4"
+    "wpengine/advanced-custom-fields-pro": "*"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
