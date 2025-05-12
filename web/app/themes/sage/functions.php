@@ -34,6 +34,7 @@ require $composer;
 Application::configure()
     ->withProviders([
         App\Providers\ThemeServiceProvider::class,
+        Log1x\AcfComposer\Providers\AcfComposerServiceProvider::class,
     ])
     ->boot();
 
