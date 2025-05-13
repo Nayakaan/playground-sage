@@ -1,0 +1,14 @@
+{
+  "apiVersion": 2,
+  "name": "myplugin/my-block",
+  "title": "My Block",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example block built with @wordpress/scripts.",
+  "keywords": ["example", "demo"],
+  "version": "1.0.0",
+  "textdomain": "sage",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/index.css"
+}

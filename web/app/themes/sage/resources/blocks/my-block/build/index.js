@@ -1,0 +1,1 @@
+(()=>{"use strict";const o=window.wp.blocks,e=window.wp.blockEditor,r=window.ReactJSXRuntime;(0,o.registerBlockType)("myplugin/my-block",{edit(){const o=(0,e.useBlockProps)();return(0,r.jsx)("div",{...o,children:"Hello from editor 👋"})},save(){const o=e.useBlockProps.save();return(0,r.jsx)("div",{...o,children:"Hello from frontend 🌍"})}})})();

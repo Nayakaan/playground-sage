@@ -13,7 +13,7 @@ use Roots\Acorn\Application;
 |
 */
 
-if (! file_exists($composer = __DIR__.'/vendor/autoload.php')) {
+if (! file_exists($composer = __DIR__ . '/vendor/autoload.php')) {
     wp_die(__('Error locating autoloader. Please run <code>composer install</code>.', 'sage'));
 }
 
@@ -59,3 +59,10 @@ collect(['setup', 'filters'])
             );
         }
     });
+
+
+add_action('init', function () {
+    register_block_type(get_theme_file_path('resources/blocks/my-block'));
+    register_block_type(get_theme_file_path('resources/blocks/custom-card'));
+
+});

@@ -1,0 +1,22 @@
+{
+  "apiVersion": 2,
+  "name": "theme/custom-card",
+  "title": "Custom Card",
+  "category": "widgets",
+  "icon": "id",
+  "description": "Karta z tytułem i opisem, renderowana przez PHP.",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Domyślny tytuł"
+    },
+    "description": {
+      "type": "string",
+      "default": "Domyślny opis"
+    }
+  },
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/style-index.css",
+  "style": "file:./build/style-index.css",
+  "render": "file:./view.php"
+}

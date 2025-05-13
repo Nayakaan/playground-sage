@@ -10,7 +10,7 @@ export default defineConfig({
     laravel({
       input: [
         'resources/css/app.css',
-        'resources/js/app.js',
+        'resources/js/app.jsx',
         'resources/css/editor.css',
         'resources/js/editor.js',
       ],
@@ -33,6 +33,8 @@ export default defineConfig({
       '@styles': '/resources/css',
       '@fonts': '/resources/fonts',
       '@images': '/resources/images',
+      '@components': '/resources/js/components',
+      '@modules': '/resources/js/modules'
     },
   },
 })

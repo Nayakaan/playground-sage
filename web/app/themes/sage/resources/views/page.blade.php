@@ -13,6 +13,8 @@
             </a>
         </x-hero>
 
+        <div class="react-counter"></div>
+
         <x-card title="Nowość: Detektyw w akcji"Ż
             excerpt="Rozwiąż zagadkę zaginionego listu i odkryj prawdę, zanim będzie za późno. Rozwiąż zagadkę zaginionego listu i odkryj prawdę, zanim będzie za późno."
             image="https://placehold.co/600x400" link="/case-file/123" variant="light" id="highlighted-card"
